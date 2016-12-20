@@ -1,0 +1,1 @@
+// script to convert mtgjson into mysql database.

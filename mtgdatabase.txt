@@ -1,0 +1,83 @@
+DO NOT NEED
+id	3129aee7f26a4282ce131db7d417b1bc3338c4d4	A unique id for this card. It is made up by doing an SHA1 hash of setCode + cardName + cardImageName
+foreignNames	[ { "language" : "Italian",
+"name" : "Wurm Devastatore",
+"multiverseid" : 200475 } ]	Foreign language names for the card, if this card in this set was printed in another language. An array of objects, each object having 'language', 'name' and 'multiverseid' keys. Not available for all sets.
+imageName	"ajani goldmane"	This used to refer to the mtgimage.com file name for this card.
+mtgimage.com has been SHUT DOWN by Wizards of the Coast.
+This field will continue to be set correctly and is now only useful for UID purposes.
+originalText	"{8}: Do 4 damage to any target."	The original text on the card at the time it was printed. This field is not available for promo cards.
+originalType	"Mono Artifact"	The original type on the card at the time it was printed. This field is not available for promo cards.
+legalities	[ { "format" : "Legacy",
+"legality" : "Banned" },
+{ "format" : "Vintage",
+"legality" : "Restricted" } ]	Which formats this card is legal, restricted or banned in. An array of objects, each object having 'format' and 'legality'. A 'condition' key may be added in the future if Gatherer decides to utilize it again.
+source	"Theros Game Day prize"	For promo cards, this is where this card was originally obtained. For box sets that are theme decks, this is which theme deck the card is from. For clash packs, this is which deck it is from.
+hand	-3	Maximum hand size modifier. Only exists for Vanguard cards.
+life	-10	Starting life total modifier. Only exists for Vanguard cards.
+reserved	true	Set to true if this card is reserved by Wizards Official Reprint Policy
+releaseDate	"2010-07-22" or "2010-07" or "2010"	The date this card was released. This is only set for promo cards. The date may not be accurate to an exact day and month, thus only a partial date may be set (YYYY-MM-DD or YYYY-MM or YYYY). Some promo cards do not have a known release date.
+starter	true	Set to true if this card was only released as part of a core box set. These are technically part of the core sets and are tournament legal despite not being available in boosters.
+mciNumber	109	Number used by MagicCards.info for their indexing URLs (Most often it is the card number in the set)
+watermark	"Selesnya"	The watermark on the card. Note: Split cards don't currently have this field set, despite having a watermark on each side of the split card.
+border	"black"	If the border for this specific card is DIFFERENT than the border specified in the top level set JSON, then it will be specified here. (Example: Unglued has silver borders, except for the lands which are black bordered)
+timeshifted	true	If this card was a timeshifted card in the set.
+
+
+
+MAYBE
+layout	"normal"	The card layout. Possible values: normal, split, flip, double-faced, token, plane, scheme, phenomenon, leveler, vanguard, meld
+flavor	"I'd like to buy a bowel."	The flavor text of the card.
+artist	"Mark Poole"	The artist of the card. This may not match what is on the card as MTGJSON corrects many card misprints.
+number	"148a"	The card number. This is printed at the bottom-center of the card in small text. This is a string, not an integer, because some cards have letters in their numbers.
+multiverseid	2479	The multiverseid of the card on Wizard's Gatherer web page.Cards from sets that do not exist on Gatherer will NOT have a multiverseid.Sets not on Gatherer are: ATH, ITP, DKM, RQS, DPA and all sets with a 4 letter code that starts with a lowercase 'p'.
+variations	[ 1909, 1910 ]	If a card has alternate art (for example, 4 different Forests, or the 2 Brothers Yamazaki) then each other variation's multiverseid will be listed here, NOT including the current card's multiverseid. NOTE: Only present for sets that exist on Gatherer.
+rulings	[ { "date" : "2003-04-15",
+"text" : "Does not tap." } ]	The rulings for the card. An array of objects, each object having 'date' and 'text' keys.
+
+DEFINITELY
+name	"Research"	The card name. For split, double-faced and flip cards, just the name of one side of the card. Basically each 'sub-card' has its own record.
+names	[ "Research", "Development" ]	Only used for split, flip, double-faced, and meld cards. Will contain all the names on this card, front or back. For meld cards, the first name is the card with the meld ability, which has the top half on its back, the second name is the card with the reminder text, and the third name is the melded back face.
+manaCost	"GU"	The mana cost of this card. Consists of one or more mana symbols.
+cmc	2	Converted mana cost. Always a number. NOTE: cmc may have a decimal point as cards from unhinged may contain "half mana" (such as 'Little Girl' with a cmc of 0.5). Cards without this field have an implied cmc of zero as per rule 202.3a
+colors	[ "Blue", "Green" ]	The card colors. Usually this is derived from the casting cost, but some cards are special (like the back of double-faced cards and Ghostfire).
+colorIdentity	[ "U", "G" ]	This is created reading all card color information and costs. It is the same for double-sided cards (if they have different colors, the identity will have both colors). It also identifies all mana symbols in the card (cost and text). Mostly used on commander decks.
+type	"Legendary Creature — Angel"	The card type. This is the type you would see on the card if printed today. Note: The dash is a UTF8 'long dash' as per the MTG rules
+supertypes	[ "Legendary" ]	The supertypes of the card. These appear to the far left of the card type. Example values: Basic, Legendary, Snow, World, Ongoing
+types	[ "Creature" ]	The types of the card. These appear to the left of the dash in a card type. Example values: Instant, Sorcery, Artifact, Creature, Enchantment, Land, Planeswalker
+subtypes	[ "Angel" ]	The subtypes of the card. These appear to the right of the dash in a card type. Usually each word is its own subtype. Example values: Trap, Arcane, Equipment, Aura, Human, Rat, Squirrel, etc.
+rarity	"Rare"	The rarity of the card. Examples: Common, Uncommon, Rare, Mythic Rare, Special, Basic Land
+text	"{T}: You gain 1 life."	The text of the card. May contain mana symbols and other symbols.
+power	"4"	The power of the card. This is only present for creatures. This is a string, not an integer, because some cards have powers like: "1+*"
+toughness	"5"	The toughness of the card. This is only present for creatures. This is a string, not an integer, because some cards have toughness like: "1+*"
+multiverseid	2479	The multiverseid of the card on Wizard's Gatherer web page.Cards from sets that do not exist on Gatherer will NOT have a multiverseid.Sets not on Gatherer are: ATH, ITP, DKM, RQS, DPA and all sets with a 4 letter code that starts with a lowercase 'p'.
+variations	[ 1909, 1910 ]	If a card has alternate art (for example, 4 different Forests, or the 2 Brothers Yamazaki) then each other variation's multiverseid will be listed here, NOT including the current card's multiverseid. NOTE: Only present for sets that exist on Gatherer.
+printings	[ "ICE", "CHR" ]	The sets that this card was printed in, expressed as an array of set codes.
+
+
+
+
+
+
+
+
+
+SET
+NEED
+"name" : "Nemesis",            // The name of the set
+"code" : "NMS",                // The set's abbreviated code
+"onlineOnly" : false,          // Present and set to true if the set was only released online
+
+DO NOT NEED
+"gathererCode" : "NE",         // The code that Gatherer uses for the set. Only present if different than 'code'
+"oldCode" : "NEM",             // An old style code used by some Magic software. Only present if different than 'gathererCode' and 'code'
+"magicCardsInfoCode" : "ne",   // The code that magiccards.info uses for the set. Only present if magiccards.info has this set
+"releaseDate" : "2000-02-14"   // When the set was released (YYYY-MM-DD). For promo sets, the date the first card was released.
+"border" : "black",            // The type of border on the cards, either "white", "black" or "silver"
+"type" : "expansion",          // Type of set. One of: "core", "expansion", "reprint", "box", "un",
+                             //                      "from the vault", "premium deck", "duel deck",
+                             //                      "starter", "commander", "planechase", "archenemy",
+                             //                      "promo", "vanguard", "masters", "conspiracy"
+"block" : "Masques",           // The block this set is in,
+"booster" : [ "rare", ... ],   // Booster contents for this set, see below for details
+"cards" : [ {}, {}, {}, ... ]  // The cards in the set
